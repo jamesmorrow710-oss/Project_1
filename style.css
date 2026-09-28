@@ -70,6 +70,18 @@ article{
 	padding: 20px 0;
 }
 
+fieldset {
+  background-color: #93a98b;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+legend {
+  background-color: #1d3557;
+  color: #fff;
+  padding: 3px 8px;
+}
+
+
 img {
 	max-width: 300px;
 	height: auto;
