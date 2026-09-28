@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Trip(s) to Japan - Food</title>
+</head>
+<body>
+    <header>
+        <h1>My Trip(s) to Japan</h1>
+    </header>
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="cities.html">Cities</a>
+            <a href="activities.html">Activities</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Japanese Food</h2>
+            <p>One of the best parts about visiting Japan is experiencing the incredible food. From fresh sushi and sashimi to hearty ramen and tempura, Japanese cuisine offers so many unique and delicious dishes.</p>
+        </section>
+        <section>
+            <form>
+                <!--  
+                    The fieldset tag is used to group related elements in a form.
+
+                    I am using all these tags and attributes to allow me to create this interactive form for users to select their favorite Japanese dish. 
+                    Once we learn about JavaScript, I will be able to make this form interactive and allow users to submit their favorite dish and display it on the page.
+                -->
+                <fieldset>
+                    <!--  The legend tag defines a caption for the fieldset -->
+                    <legend>Choose your favorite Japanese dish</legend>
+                    <!-- This Input Tag creates a radio button for selecting a dish -->
+                    <input type="radio" id="ramen" name="dish" value="R" />
+                    <!--  
+                        The type attribute specifies the type of input element.
+                        And the for attribute of the label tag is used to bind the label to the input element with the corresponding id.
+                    -->
+                    <label for="ramen">Ramen</label><br />
+
+                    <input type="radio" id="sushi" name="dish" value="S" />
+                    <label for="sushi">Sushi and Sashimi</label><br />
+
+                    <input type="radio" id="onigiri" name="dish" value="O" />
+                    <label for="onigiri">Onigiri</label><br />
+                    
+                    <!--  
+                    The disabled attribute makes the input element unselectable and unclickable 
+                    Since the burger is not a Japanese dish, I have disabled this option to prevent users from selecting it.
+                    -->
+                    <input type="radio" id="burger" name="dish" value="T" disabled />
+                    <label for="burger">Burger</label>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h3>My Favorite Meal</h3>
+            <img src="media/sushi.jpg" alt="Sushi" align="right" />
+            <p> One of my <em>favorite</em> meals that I had in Japan was a 5 course izakaya at a small restaurant in Kyoto. Each course was prepared right in front of my mom and I. </p>
+        </section>
+        <section>
+            <h3>Photos</h3>
+            <div class="photo-gallery">
+                <div class="photo">
+                    <img src="media/Ramen.jpeg" alt="Ramen" height="400" width="350" />
+                </div>
+                <div class="photo">
+                    <img src="media/Tuna.jpg" alt="Tuna" height="400" width="350" />
+                </div>
+                <div class="photo">
+                    <img src="media/Steaks.jpeg" alt="Steaks" height="400" width="350" />
+                </div>
+                <div class="photo">
+                    <img src="media/Matcha.jpeg" alt="Matcha" height="400" width="350" />
+                </div>
+                <div class="photo">
+                    <img src="media/Sake.jpeg" alt="Sake" height="400" width="350" />
+                </div>
+                <div class="photo">
+                    <img src="media/Omakase.jpg" alt="Omakase" height="400" width="350" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cities.html">Cities</a>
+        <a href="activities.html">Activities</a>
+    </nav>
+</body>
+</html>

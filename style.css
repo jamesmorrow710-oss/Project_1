@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	color: #243447;
+	background: #f5f7fa;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 150%;
+	line-height: 1.6;
+}
+
+header,
+nav,
+main{
+	width: min(1100px, 92%);
+	margin: 0 auto;
+}
+
+header {
+	padding: 32px 0 16px;
+	text-align: center;
+}
+
+h1,
+h2,
+h3 {
+	color: #1d3557;
+}
+
+a {
+	color: #1769aa;
+}
+
+a:hover {
+	color: #0d47a1;
+}
+
+/* Navigation bar style */
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	justify-content: center;
+	padding: 12px 0;
+}
+/* Navigation links style */
+nav a {
+	padding: 8px 12px;
+	border-radius: 6px;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+	color: #fff;
+	background: #1769aa;
+}
+
+main {
+	min-height: 60vh;
+	padding: 32px 0;
+}
+
+section,
+article{
+	/* Contain floated images so they cannot overlap the next section. */
+	display: flow-root;
+	margin-bottom: 24px;
+	padding: 20px 0;
+}
+
+img {
+	max-width: 300px;
+	height: auto;
+}
+
+/* Keep right-aligned images inside their section and separated from text. */
+img[align="right"],
+.align-right,
+.float-right {
+	float: right;
+	margin: 0 0 16px 20px;
+}
+
+input {
+	width: 100%;
+	max-width: 500px;
+	padding: 10px 12px;
+	font: inherit;
+	border: 1px solid #b8c4ce;
+	border-radius: 5px;
+}
+
+/* The main gallery  */
+.photo-gallery {
+  display: grid;
+  /* Automatically creates as many columns as fit, with a minimum width of 250px */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Controls the spacing (gap) between photos */
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+/*  The individual photo wrappers */
+.photo {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sets a fixed height so all gallery tiles look uniform */
+  height: 250px; 
+}
+
+/* The images inside the wrappers */
+.photo img {
+  width: 100%;
+  height: 100%;
+  /* Forces the image to fill the div nicely */
+  object-fit: cover; 
+  /* Smooth zoom effect transition */
+  transition: transform 0.3s ease; 
+}
+
+/*  hover effect for the images */
+.photo img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
